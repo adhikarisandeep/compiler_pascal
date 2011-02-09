@@ -1,0 +1,21 @@
+VAR 
+  X,A;
+
+
+  FUNCTION FIBONACCI(VAL N);
+  BEGIN
+    IF (N=0) THEN
+      FIBONACCI := 0 
+    ELSE IF (N=1) THEN
+      FIBONACCI := 1
+    ELSE
+      FIBONACCI := (CALL FIBONACCI(N-1))+ (CALL FIBONACCI(N-2));
+      
+  END;
+
+  BEGIN
+    X:=18;
+    FOR A:= 1 TO X DO
+      WRITE(CALL FIBONACCI(A));
+    WRITELN (CALL FIBONACCI (A));
+  END.
