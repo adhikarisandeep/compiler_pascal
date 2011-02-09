@@ -1,0 +1,9 @@
+To compile use fpc
+
+sudo apt-get install fpc
+
+fpc compiler.pas
+
+./compiler < hanoi.pas
+
+./compiler < fib.pas
